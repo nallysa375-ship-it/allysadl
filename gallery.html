@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery | Nur Allysa</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="page">
+            <div class="topbar">
+                <div class="brand">Nur Allysa</div>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="achievements.html">Achievements</a>
+                    <a class="active" href="gallery.html">Gallery</a>
+                    <a href="reference.html">Reference</a>
+                </nav>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="content">
+                <h2 class="h2">Gallery</h2>
+                <div class="block" style="text-align:center;margin-bottom:10px;">
+                    𝓣𝓱𝓲𝓼 𝓰𝓪𝓵𝓵𝓮𝓻𝔂 𝓱𝓸𝓵𝓭𝓼 𝓹𝓲𝓮𝓬𝓮𝓼 𝓸𝓯 𝓶𝔂 𝓳𝓸𝓾𝓻𝓷𝓮𝔂 — 𝓯𝓻𝓸𝓶 𝓼𝓶𝓪𝓵𝓵
+                    𝓳𝓸𝔂𝓼 𝓽𝓸 𝓾𝓷𝓯𝓸𝓻𝓰𝓮𝓽𝓽𝓪𝓫𝓵𝓮 𝓶𝓸𝓶𝓮𝓷𝓽𝓼.
+                </div>
+
+                <div id="polaroid-gallery" class="polaroid-gallery"></div>
+
+                <div class="strip" style="margin-top:18px;">Video</div>
+                <div id="video-gallery" class="video-gallery"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="box" onclick="event.stopPropagation()">
+            <img id="lightbox-img" alt="enlarged" style="display:none;">
+            <video id="lightbox-video" controls style="display:none;"></video>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="Fade Into You.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="bg-music" loop>
+        <source src="Fade Into You.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-btn" class="paused" aria-label="Music">
+        <span class="tri"></span>
+        <span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Achievements | Nur Allysa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="page">
+            <div class="topbar">
+                <div class="brand">Nur Allysa</div>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a class="active" href="achievements.html">Achievements</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="reference.html">Reference</a>
+                </nav>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="content">
+                <h2 class="h2">Achievements</h2>
+
+                <div class="strip left">Highlights</div>
+                <div class="block">
+                    • Vice President (2) — Islamic Education & Arabic Language Association<br>
+                    • School Co-curricular Achievement (Rank 1)<br>
+                    • Hasya’ (Nasyeed) participant & school representative<br>
+                    • Selected participant — Coding@Schools<br>
+                    • UPKK Result: 8A<sup>+</sup></li><br>
+                    • Active committee member — Islamic Education & Arabic programmes<br>
+                    • KKQ Achievement: Band (High)<br>
+                    • UiTM Marching Band participant (2023–2024)
+                </div>
+
+                <div class="strip left" style="margin-top:18px;">Certificates</div>
+                <div class="block">
+                    <a href="certificates.pdf" target="_blank"
+                        style="color:var(--accent);font-weight:700;text-decoration:none;">
+                        → View My Certificates (PDF)
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="box" onclick="event.stopPropagation()">
+            <img id="lightbox-img" alt="enlarged">
+            <video id="lightbox-video" controls></video>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="Fade Into You.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-btn" class="paused" aria-label="Music">
+        <span class="tri"></span>
+        <span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

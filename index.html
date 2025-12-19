@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Nur Allysa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="page">
+            <div class="topbar">
+                <div class="brand">Nur Allysa</div>
+                <nav class="nav">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="achievements.html">Achievements</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="reference.html">Reference</a>
+                </nav>
+            </div>
+            <div class="divider"></div>
+
+            <div class="content">
+                <div class="grid-home">
+                    <div>
+                        <h1 class="h1">Hi, I’m Nur Allysa</h1>
+
+                        <div class="block">
+                            I am currently pursuing a Diploma in Information Management at Universiti Teknologi MARA
+                            (UiTM). I am a highly motivated Information Management student with a strong interest in
+                            records and archives management, metadata, and creative digital organisation. My academic
+                            background has provided me with a solid foundation in records management, documentation
+                            practices, web development, programming, and database management.
+                            <br><br>
+                            I am based in Kulai, Johor, and was born on 25 April 2005. I have gained practical
+                            experience
+                            in documentation and records handling through my internship at Majlis Perbandaran Kulai
+                            (MPKU), where I was exposed to real-world records management practices and administrative
+                            documentation.
+                        </div>
+
+                        <div class="strip">Welcome</div>
+                        <div class="block">
+                            This portfolio website highlights my background, skills, achievements, and gallery moments.
+                            Feel free to explore each section using the navigation above.
+                        </div>
+
+                        <div id="datetime" class="datetime"></div>
+                    </div>
+
+                    <div>
+                        <div class="polaroid-big">
+                            <img src="homepic.jpg" alt="Nur Allysa photo">
+                            <div class="cap">Nur Allysa</div>
+                        </div>
+
+                        <div class="quick">
+                            <h3 class="dt-title">Date & Time</h3>
+                            <div id="date-time" class="dt-content">
+                                Loading date & time...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="box" onclick="event.stopPropagation()">
+            <img id="lightbox-img" alt="enlarged image">
+            <video id="lightbox-video" controls></video>
+        </div>
+    </div>
+
+    <!-- Background music -->
+    <audio id="bg-music" loop>
+        <source src="Fade Into You.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-btn" class="paused" aria-label="Music">
+        <span class="tri"></span>
+        <span class="bar"></span><span class="bar"></span>
+    </button>
+    <!-- DATE & TIME -->
+    <div class="home-datetime">
+        <span id="datetime"></span>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
