@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Expenses | PocketPlan</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Allysa"><meta name="description" content="PocketPlan: a bold, colourful student expense tracker.">
+<meta name="keywords" content="expense tracker, budget, student, PocketPlan"><meta name="theme-color" content="#FFC72C">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Inter:wght@500;600;700;800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head>
+<body data-page="expenses">
+<div id="nav"></div>
+<div class="wrap">
+<main>
+<h1 class="title">Expenses</h1>
+<form id="addForm" class="pc mb-4" novalidate>
+  <h2 class="h5">Add a spend</h2>
+  <p class="text-muted small">Every time you pay for something, add it here. It updates your charts and budget.</p>
+  <div class="row g-2">
+    <div class="col-6 col-md-2"><label class="form-label fw-bold" for="fDate">Date</label><input id="fDate" type="date" class="form-control"><div class="form-text">Today is filled in</div></div>
+    <div class="col-6 col-md-3"><label class="form-label fw-bold" for="fItem">Item</label><input id="fItem" class="form-control" placeholder="e.g. Lunch"><div class="form-text">What did you buy?</div></div>
+    <div class="col-6 col-md-3"><label class="form-label fw-bold" for="fCat">Category</label><select id="fCat" class="form-select"></select><div class="form-text">Pick the closest one</div></div>
+    <div class="col-6 col-md-2"><label class="form-label fw-bold" for="fAmt">RM</label><input id="fAmt" type="number" step="0.01" min="0" class="form-control"><div class="form-text">How much you paid</div></div>
+    <div class="col-12 col-md-2 d-flex align-items-start pt-md-4"><button class="btn-go w-100 mt-md-2" type="submit">Add</button></div>
+  </div>
+  <div id="formMsg" class="small mt-2" role="status"></div>
+</form>
+<div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+<div class="pc"><table class="tbl">
+<thead><tr><th>Date</th><th>Item</th><th>Category</th><th class="text-end">Amount (RM)</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+</main>
+<footer class="foot foot-mini">&copy; 2026 PocketPlan</footer>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/expenses.js"></script>
+</body></html>
